@@ -94,3 +94,6 @@ export PATH=$PATH:/home/sesar/.spicetify
 
 # zoxide
 eval "$(zoxide init --cmd cd zsh)" 
+
+# gpg keys thingies
+export GPG_TTY=$(tty)
