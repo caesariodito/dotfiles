@@ -5,7 +5,7 @@ ZSH=/usr/share/oh-my-zsh/
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 
 # List of plugins used
-plugins=(git sudo zsh-256color zsh-autosuggestions zsh-syntax-highlighting asdf)
+plugins=(git sudo zsh-256color zsh-autosuggestions zsh-syntax-highlighting asdf you-should-use)
 source $ZSH/oh-my-zsh.sh
 
 # In case a command is not found, try to find the package that has it
@@ -96,11 +96,14 @@ alias lS='eza -1 --color=always --group-directories-first --icons'
 alias lt='eza --tree --level=2 --color=always --group-directories-first --icons'
 alias l.="eza -a | grep -E '^\.'"
 
+alias ssh='open ssh://'
+
+# lazygit
+alias lg='lazygit'
+
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-#Display Pokemon
-pokemon-colorscripts --no-title -r 1,3,6
 
 export PATH=$PATH:/home/sesar/.spicetify
 
@@ -115,3 +118,12 @@ export GPG_TTY=$(tty)
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+# pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
+
+#Display Pokemon
+pokemon-colorscripts --no-title -r 1,3,6
