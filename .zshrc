@@ -69,7 +69,8 @@ alias pl='$aurhelper -Qs' # list installed package
 alias pa='$aurhelper -Ss' # list availabe package
 alias pc='$aurhelper -Sc' # remove unused cache
 alias po='$aurhelper -Qtdq | $aurhelper -Rns -' # remove unused packages, also try > $aurhelper -Qqd | $aurhelper -Rsu --print -
-alias vc='code --ozone-platform-hint=wayland --disable-gpu' # gui code editor
+# alias vc='code --ozone-platform-hint=wayland --disable-gpu' # gui code editor
+alias vc='code --disable-gpu' # gui code editor
 
 # Handy change dir shortcuts
 alias ..='cd ..'
@@ -95,8 +96,6 @@ alias lx='eza -lbhHigUmuSa@ --time-style=long-iso --git --color-scale --color=al
 alias lS='eza -1 --color=always --group-directories-first --icons'
 alias lt='eza --tree --level=2 --color=always --group-directories-first --icons'
 alias l.="eza -a | grep -E '^\.'"
-
-alias ssh='open ssh://'
 
 # lazygit
 alias lg='lazygit'
