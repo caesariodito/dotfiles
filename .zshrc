@@ -5,7 +5,12 @@ ZSH=/usr/share/oh-my-zsh/
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 
 # List of plugins used
-plugins=(git sudo zsh-256color zsh-autosuggestions zsh-syntax-highlighting asdf you-should-use)
+plugins=(git sudo zsh-256color zsh-autosuggestions zsh-syntax-highlighting asdf you-should-use fzf-tab)
+
+# zsh-completions
+fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
+
+# sourcing
 source $ZSH/oh-my-zsh.sh
 
 # In case a command is not found, try to find the package that has it
@@ -99,7 +104,6 @@ alias l.="eza -a | grep -E '^\.'"
 
 # lazygit
 alias lg='lazygit'
-
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

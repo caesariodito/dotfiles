@@ -30,3 +30,8 @@ stow
 
 4. If you're done with the setup of the files that you want to store in the dotfiles, you need to run `stow .` in the dotfiles directory.
 5. Additional info: you can also pass the `--adopt` flag if the files exist both in $HOME and dotfiles directory. It will move and overwrite the content of dotfiles directory from the $HOME directory.
+
+
+# Future Plans
+
+- [ ] Planning to migrate from oh-my-zsh to zinit, source: https://www.youtube.com/watch?v=ud7YxC33Z3w
