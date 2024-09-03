@@ -1,0 +1,5 @@
+lazygit
+zoxide
+eza
+fzf
+ripgrep
