@@ -16,6 +16,9 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
+  # Enable touchpad support (optional)
+  services.libinput.enable = true;
+
   # Set system state version
   system.stateVersion = "24.05";
 }

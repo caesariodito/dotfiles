@@ -9,7 +9,4 @@
     layout = "us";
     variant = "";
   };
-
-  # Enable touchpad support (optional)
-  services.libinput.enable = true;
 }
