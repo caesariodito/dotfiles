@@ -10,7 +10,7 @@
   # Enable Bluetooth
   hardware.bluetooth.enable = true;
 
-  # Enable sound with Pipewire
+  # Enable sound with Pipewire  
   hardware.pulseaudio.enable = false;
   security.rtkit.enable = true;
   services.pipewire = {
@@ -37,11 +37,5 @@
     pass
     spotify
     spicetify-cli
-  ];
-
-  # For sync local tracks spotify
-  networking.firewall.allowedTCPPorts = [ 57621 ];
-
-  # In order to enable discovery of Google Cast devices on spotify
-  networking.firewall.allowedUDPPorts = [ 5353 ];
+  ];  
 }
