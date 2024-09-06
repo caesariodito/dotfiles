@@ -35,6 +35,5 @@
     vscode
     xdg-utils
     pass
-    spotify
   ];
 }
