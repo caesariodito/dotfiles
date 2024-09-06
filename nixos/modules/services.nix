@@ -36,6 +36,5 @@
     xdg-utils
     pass
     spotify
-    spicetify-cli
   ];
 }
