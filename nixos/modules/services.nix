@@ -35,7 +35,7 @@
     vscode
     xdg-utils
     pass
-    #spotify
-    #spicetify-cli
+    spotify
+    spicetify-cli
   ];
 }
