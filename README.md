@@ -1,5 +1,7 @@
 created at: 2024-04-08
 
+read another readme: [nixos readme](./nixos_README.md)
+
 basically... my dotfiles for my EndeavourOS + hyprland
 
 So I installed my linux desktop with this repo: [https://github.com/prasanthrangan/hyprdots](https://github.com/prasanthrangan/hyprdots). Most of the settings were comming from that repo. I only modified a few, but I hope in the future I can expand this config further. Such as adding kitty and tmux config.
