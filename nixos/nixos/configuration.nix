@@ -89,6 +89,12 @@
   # Set your hostname
   networking.hostName = "nixos-ssr";
 
+  # PACKAGES
+  programs.zsh.enable = true;
+
+  # DEFAULT APPS
+  users.defaultUserShell = pkgs.zsh;
+
   # Configure your system-wide user settings (groups, etc), add more users as needed.
   users.users = {
     ssr = {
@@ -100,6 +106,7 @@
         # SSH public key(s) here, if you plan on using SSH to connect
       ];
       extraGroups = ["wheel" "networkmanager" "audio" "docker"];
+      shell = pkgs.zsh;
     };
   };
 
