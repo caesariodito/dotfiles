@@ -6,5 +6,6 @@
   home.packages = with pkgs; [
     eza
     vscode
+    vesktop
   ];
 }
