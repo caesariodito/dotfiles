@@ -1,10 +1,10 @@
 # TODO
 { pkgs, ... }:
 {
-  home.packages = with pkgs; [
-    zsh-autosuggestions
-    zsh-syntax-highlighting
-  ];
+  # home.packages = with pkgs; [
+  #   zsh-autosuggestions
+  #   zsh-syntax-highlighting
+  # ];
 
   programs.zsh = {
     enable = true;
