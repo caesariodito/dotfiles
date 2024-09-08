@@ -8,6 +8,7 @@
 
   programs.zsh = {
     enable = true;
+    enableCompletion = true;
 
     autosuggestion.enable = true;
     syntaxHighlighting.enable = true;
@@ -20,12 +21,10 @@
         "node"
       ];
     };
-    # shellInit = ''
-    #   # Initialize zoxide
-    #   eval "$(zoxide init zsh)"
 
-    #   # Alias 'cd' to use 'z'
-    #   alias cd="z"
-    # '';
+    shellAliases = {
+      # Aliasing nix develop to use zsh shell instead of the default bash shell
+      nd="nix develop -c zsh";
+    };
   };
 }
