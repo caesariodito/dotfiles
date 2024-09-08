@@ -12,6 +12,6 @@
     gh
     lazygit
     pass
-    spotify-qt
+    vlc
   ];
 } 
