@@ -12,5 +12,6 @@
     gh
     lazygit
     pass
+    spotify-qt
   ];
 } 

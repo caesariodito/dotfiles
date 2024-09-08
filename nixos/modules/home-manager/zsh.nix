@@ -17,7 +17,6 @@
       theme = "robbyrussell";
       plugins = [
         "git"
-        "thefuck"
         "node"
       ];
     };
