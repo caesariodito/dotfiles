@@ -25,6 +25,7 @@
     shellAliases = {
       # Aliasing nix develop to use zsh shell instead of the default bash shell
       nd="nix develop -c zsh";
+      lg="lazygit";
     };
   };
 }
