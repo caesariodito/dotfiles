@@ -8,6 +8,7 @@
     fzf
     firefox
     google-chrome
+    chromium
     docker  
     docker-compose
     gh
