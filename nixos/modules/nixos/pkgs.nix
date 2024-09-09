@@ -17,5 +17,6 @@
     vlc
     nixVersions.latest
     obs-studio
+    kdePackages.kdenlive
   ];
 } 
