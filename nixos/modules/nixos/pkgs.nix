@@ -14,5 +14,6 @@
     lazygit
     pass
     vlc
+    nixVersions.latest
   ];
 } 
