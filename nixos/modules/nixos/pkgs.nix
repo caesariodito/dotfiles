@@ -7,6 +7,7 @@
     xdg-utils
     fzf
     firefox
+    google-chrome
     docker  
     docker-compose
     gh
