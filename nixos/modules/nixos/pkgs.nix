@@ -16,5 +16,6 @@
     pass
     vlc
     nixVersions.latest
+    obs-studio
   ];
 } 
