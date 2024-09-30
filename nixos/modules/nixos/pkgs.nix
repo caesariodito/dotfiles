@@ -19,5 +19,6 @@
     obs-studio
     kdePackages.kdenlive
     obsidian
+    syncthing
   ];
 } 
