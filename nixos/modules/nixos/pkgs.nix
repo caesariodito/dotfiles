@@ -18,5 +18,6 @@
     nixVersions.latest
     obs-studio
     kdePackages.kdenlive
+    obsidian
   ];
 } 
