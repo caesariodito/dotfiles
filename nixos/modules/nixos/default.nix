@@ -9,5 +9,6 @@
     ./services.nix
     ./docker.nix
     ./network.nix
+    ./virtualbox.nix
   ];
 }
