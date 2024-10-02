@@ -20,5 +20,6 @@
     kdePackages.kdenlive
     obsidian
     syncthing
+    wireguard-tools
   ];
 } 
