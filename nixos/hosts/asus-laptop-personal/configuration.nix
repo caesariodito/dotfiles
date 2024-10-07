@@ -19,7 +19,7 @@
 
     # You can also split up your configuration and import pieces of it here:
     # ./users.nix
-    ../modules/nixos/default.nix
+    ../../modules/nixos/default.nix
 
     # Import your generated (nixos-generate-config) hardware configuration
     ./hardware-configuration.nix
@@ -32,7 +32,7 @@
     extraSpecialArgs = { inherit inputs outputs; };
     users = {
       # Import your home-manager configuration
-      ssr = import ../home-manager/home.nix;
+      ssr = import ../../home-manager/home.nix;
     };
   };
 
