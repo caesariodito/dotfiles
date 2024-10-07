@@ -59,6 +59,13 @@
           ./hosts/asus-laptop-personal/configuration.nix
         ];
       };
+      gnome-vm = nixpkgs.lib.nixosSystem {
+        specialArgs = {inherit inputs outputs;};
+        modules = [
+          # > Our main nixos configuration file <
+          ./hosts/gnome-vm/configuration.nix
+        ];
+      };
     };
 
     # Standalone home-manager configuration entrypoint
