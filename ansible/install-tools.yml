@@ -1,0 +1,44 @@
+---
+- name: Install packages on any Linux distro
+  hosts: localhost
+  become: true
+  tasks:
+
+    - name: Update package cache (Arch-based)
+      ansible.builtin.pacman:
+        update_cache: yes
+      when: ansible_os_family == 'Archlinux'
+
+
+    - name: Install common packages (Arch-based)
+      ansible.builtin.pacman:
+        name:
+          - git
+          - zsh
+          - docker
+          - docker-compose
+          - neovim
+          - eza
+          - lazygit
+          - github-cli
+          - stow
+        state: present
+      when: ansible_os_family == 'Archlinux'
+
+    - name: Make ZSH the default shell
+      ansible.builtin.shell: |
+        chsh -s $(which zsh)
+
+    - name: Install Zoxide
+      ansible.builtin.shell: |
+        curl -sSfL https://raw.githubusercontent.com/ajeetdsouza/zoxide/main/install.sh | sh
+
+    - name: Install Oh My Zsh
+      ansible.builtin.shell: |
+        sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
+
+    - name: Start Docker service
+      ansible.builtin.service:
+        name: docker
+        state: started
+        enabled: true
